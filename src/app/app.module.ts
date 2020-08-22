@@ -3,18 +3,21 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {AdminComponent} from './layout/admin/admin.component';
+import {CommonModule} from '@angular/common';
 import {AdminModule} from './layout/admin/admin.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AdminComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
-    AdminModule
+    AdminModule,
+    BrowserModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
